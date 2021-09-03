@@ -39,3 +39,33 @@ ul {
     text-align: center;
     align-items: center;
 }
+
+.estilo div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 760px;
+}
+
+.off {
+    background-color: #C2185B;
+}
+
+.off p {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 60px;
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+}
+
+.off ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.off ul li {
+    
+}
