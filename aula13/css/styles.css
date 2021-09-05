@@ -49,6 +49,9 @@ ul {
 
 .off {
     background-color: #C2185B;
+    width: 100%;
+    padding: 30px 0;
+    margin-top: 50px;
 }
 
 .off p {
@@ -58,14 +61,109 @@ ul {
     color: #FFFFFF;
     text-align: center;
     align-items: center;
+    margin: 0;
 }
 
 .off ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    padding-inline-start: 0%;
 }
 
 .off ul li {
-    
+    margin: 0%;
+    width: 260px;
+    background-color: #FFFFFF;
+}
+
+.off ul p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.off ul p.price {
+    font-weight: normal;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+section.destaque {
+    display: flex;
+    width: 100%;
+    padding: 100px;
+}
+
+section.destaque div {
+    display: flex;
+    flex-direction: column;
+    max-height: 900px;
+}
+
+section.destaque div p {
+    font-size: 39px;
+    line-height: 53px;
+    margin-top: 0;
+}
+
+section.destaque div button {
+    background-color: #C2185B;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 39px;
+    line-height: 50px;
+    font-weight: 600;
+    width: 400px;
+    margin-bottom: 30px;
+    padding: 23px 0;
+}
+
+section.destaque img {
+    max-height: 900px;
+}
+
+section.destaque div img {
+    height: 600px;
+    width: 500px;
+    flex: auto;
+}
+
+footer {
+    width: 100%;
+    background-color: #C2185B;
+    padding: 20px 100px;
+    display: flex;
+    color:#FFFFFF;
+    font-weight: lighter;
+}
+
+footer div.footerlogo {
+    width: 250px;
+}
+
+footer div.footerlist {
+    display: flex;
+    width: 100%;
+    margin-left: 20%;
+}
+
+footer div p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+footer div ul {
+    flex-direction: column;
+    color: inherit;
+    font-size: 20px;
+    line-height: 27px;
+    padding-top: 20px;
+    display: unset;
 }
