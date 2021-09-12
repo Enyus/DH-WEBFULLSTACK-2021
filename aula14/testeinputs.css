@@ -1,0 +1,26 @@
+/* Primeiro Método */
+.exemplo1 input[type=radio], .exemplo1 input[type=checkbox]{
+    display:none; /* Esconde os inputs */
+}
+
+.exemplo1 input[type=radio] + label, .exemplo1 input[type=checkbox] + label{
+    display:inline-block;
+        height:20px;
+        padding:0 0 0 25px;
+        margin:0 10px 0 0; 
+       background-image:url(http://www.webcis.com.br/images/imagens-noticias/checkbox/ico-master.webp); 
+       background-repeat:no-repeat; 
+       background-position:0 0;
+}
+
+.exemplo1 input[type=checkbox] + label{
+        background-position:0 -60px; /* Muda a posição do background só no checkbox */
+}
+    
+.exemplo1 input[type=radio]:checked + label{
+        background-position:0 -30px;
+}
+
+.exemplo1 input[type=checkbox]:checked + label { 
+       background-position:0 -90px;
+}
