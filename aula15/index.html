@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe Conosco</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="./img/logo-vermelho.png" alt="logo">
+        <ul>
+            <li>TODOS OS PRODUTOS</li>
+            <li>COLEÇÕES</li>
+            <li>OUTLET</li>
+        </ul>
+    </header>
+
+    <div class="banner">
+        <p class="aviso">MÊS DE SETEMBRO - FRETE GRÁTIS PARA TODO O BRASIL</p>
+    </div>
+
+    <h1>Faça parte do nosso time</h1>
+
+    <section>
+        <div>
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+                <label for="tel">Telefone</label>
+                <input type="tel" id="tel" name="tel">
+                <label for="departamentos">Departamentos</label>
+                <select id="departamentos">
+                    <option selected disabled></option>
+                    <option value="rh">RH</option>
+                    <option value="desenvolvedor">Desenvolvedor</option>
+                    <option value="adm">Administração</option>
+                    <option value="mkt">Marketing</option>
+                </select>
+                <label>Disponibilidade</label>
+                <div>
+                    <input type="checkbox" class="checkbox" name="disponibilidade" id="integral" value="integral"> <label for="integral">Integral (8h)</label>
+                    <input type="checkbox" class="checkbox" name="disponibilidade" id="meio-periodo" value="meio-periodo"> <label for="meio-periodo">Meio Período (4h)</label>
+                    <input type="checkbox" class="checkbox" name="disponibilidade" id="freelancer" value="freelancer"> <label for="freelancer">Freelancer</label>
+                </div>
+                <label>Qual a melhor forma para entrarmos em contato com você?</label>
+                <div>
+                    <input type="radio" class="radio" name="contato" id="e-mail" value="e-mail"> <label for="e-mail">E-mail</label>
+                    <input type="radio" class="radio" name="contato" id="ligacao" value="ligacao"> <label for="ligacao">Ligação</label>
+                    <input type="radio" class="radio" name="contato" id="whatsapp" value="whatsapp"> <label for="whatsapp">WhatsApp</label>
+                </div>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem"></textarea>
+                <div class="curriculo">
+                    <label for="curriculo-button">Currículo</label>
+                    <input type="file" name="curriculo" id="curriculo" class="input-curriculo" style="display: none;">
+                    <button id="curriculo-button" onclick="uploadCurriculo()">upload</button>
+                    <script>
+                        function uploadCurriculo(){
+                           document.getElementById('curriculo').click();
+                        }
+                    </script>
+                </div>
+                <input type="submit" value="enviar" class='submit'>
+            </form>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos dolores distinctio. Perferendis nemo deleniti impedit neque veritatis reprehenderit alias dignissimos esse laboriosam expedita tenetur voluptate inventore molestiae, nesciunt laborum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sapiente quos laborum possimus blanditiis suscipit repellendus enim beatae dolorum ea voluptatem, a ullam aliquid? Alias corrupti id laboriosam odio maiores?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ducimus voluptate, dolore sequi rerum quibusdam magni quia, aspernatur sapiente quos tenetur voluptatibus neque ipsam suscipit adipisci odio, modi cupiditate non!</p>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footerlogo">
+            <img src="./img/logo-branco.png">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, saepe modi! Harum possimus ducimus autem eum, officia dolore sunt eius saepe? Quibusdam esse ex dolores non magnam odit rerum soluta?</p>
+        </div>
+        
+        <div class="footerlist">
+            <ul>
+                <li><strong>categorias</strong></li>
+                <li>sandálias</li>
+                <li>botas</li>
+                <li>tênis</li>
+                <li>oxford</li>
+                <li>coturnos</li>
+            </ul>
+            <ul>
+                <li><strong>institucional</strong></li>
+                <li>sobre nós</li>
+                <li>perguntas frequentes</li>
+                <li>política de privacidade</li>
+                <li>rastreamento de pedidos</li>
+                <li>trabalhe conosco</li>
+                <li>contato</li>
+            </ul>
+        </div>
+</footer>
+
+</body>
+</html>
