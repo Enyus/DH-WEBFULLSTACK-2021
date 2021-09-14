@@ -84,11 +84,12 @@ section div {
 }
 
 section div p {
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 
 section div form select {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 section div form label {
@@ -114,12 +115,12 @@ section div form {
 section form div {
     width: auto;
     display: flex;
-    align-items: center;
     margin: 10px 0;
 }
 
 input {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 input.submit {
