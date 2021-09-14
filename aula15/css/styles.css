@@ -174,8 +174,7 @@ section form div.curriculo label {
     justify-content: center;
     display: flex;
     align-items: center;
-    position: sticky;
-    top: 0;
+    position: relative;
     /* Exercício 1: Frete Grátis + Sticky + z-index */
     /* z-index: 15; */
     /* Imagino que não tenha funcionado no meu por conta do position. Pelo que vi, é necessário ter um atributo position
@@ -183,10 +182,34 @@ section form div.curriculo label {
     atrapalhando o atributo z-index. */
 }
 
-.aviso {
+/* .aviso {
     color: #FFFFFF;
     font-size: 24px;
-    justify-content: center;
     /* Exercício 1: Frete Grátis + Sticky + z-index */
     /* z-index: 1; */
+/* } */
+
+/* Teste do Exercício 1, o elemento .aviso abaixo deve ser usado com o elemento p fora da faixa. */
+
+.aviso {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -60px;
+    /* z-index: 1; */
 }
+
+.banner0 {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+}
+
+/* Realmente, estando os dois elementos dentro do mesmo elemento pai, o z-index funciona como esperado. */
