@@ -15,10 +15,13 @@ app.use(express.json())
 
 const usuarios = []
 
+
+//listar usuários:
 app.get("/users", (request, response) => {
     return response.json(usuarios)
 })
 
+//Criar usuários:
 app.post("/users", (request, response) => {
     const {nome, sobrenome, sexo, data, contato} = request.body
 
@@ -29,6 +32,8 @@ app.post("/users", (request, response) => {
     return response.json(usuario)
 })
 
+
+// Alterar um usuário:
 app.put("/users/:id", (request, response) => {
     const { id } = request.params
     const {nome, sobrenome, sexo, data, contato} = request.body
