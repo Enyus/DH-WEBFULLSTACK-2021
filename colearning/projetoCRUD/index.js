@@ -63,11 +63,9 @@ app.put("/todo", (request, response) => {
         return response.status(400).json({error: "ToDo não encontrado"})
     }
     
-    usuario.todos[todoIndex] = {
-        todoid,
-        title,
-        deadline,
-    }
+    usuario.todos[todoIndex].todoid = todoid
+    usuario.todos[todoIndex].title = title
+    usuario.todos[todoIndex].deadline = deadline
 
     usuarios[userIndex] = usuario
 
