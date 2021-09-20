@@ -47,51 +47,38 @@ app.get("/todo", (request, response) => {
 
 
 // Alterar o title e deadline de um todo existente
-// Está coslocando apenas os valores alterados
+// Aparentemente está dando certo agora, mas não entendo como alterar um item na lista dos TO-DOs altera a lista do usuário também
 
-app.put("/todo", (request, response) => {
-    const {userid, todoid, title, deadline} = request.body
+app.put("/todo/:todoid", (request, response) => {
+    const { todoid } = request.params
+    const { title, deadline} = request.body
     
-    userIndex = usuarios.findIndex( element => element.userid == userid)
-    if (userIndex < 0) {
-        return response.status(400).json({error: "Usuário não encontrado"})
-    }
-    let usuario = usuarios[userIndex]
-    
-    todoIndex = usuarios[userIndex].todos.findIndex( element => element.todoid == todoid)
+    todoIndex = allToDos.findIndex( element => element.todoid == todoid)
     if (todoIndex < 0) {
         return response.status(400).json({error: "ToDo não encontrado"})
     }
     
-    usuario.todos[todoIndex].todoid = todoid
-    usuario.todos[todoIndex].title = title
-    usuario.todos[todoIndex].deadline = deadline
+    allToDos[todoIndex].title = title
+    allToDos[todoIndex].deadline = deadline
 
-    usuarios[userIndex] = usuario
-
-    return response.json(usuario)
+    return response.json(allToDos)
 })
 
 
 // Marcar um TO-DO como feito
 // está colocando apenas os valores alterados
 
-app.put ("/todo", (request,response) => {
-    const {userid, todoid} = request.body
+app.put ("/todo/:todoid", (request,response) => {
+    const { todoid } = request.params
 
-    userIndex = usuarios.findIndex( element => element.userid == userid)
-    if (userIndex < 0) {
-        return response.status(400).json({error: "Usuário não encontrado"})
-    }
-        
-    todoIndex = usuarios[userIndex].todos.findIndex( element => element.todoid == todoid)
+    todoIndex = allToDos.findIndex( element => element.todoid == todoid)
     if (todoIndex < 0) {
         return response.status(400).json({error: "ToDo não encontrado"})
     }
 
-    usuarios[userIndex].todos[todoIndex].done = true
+    allToDos[todoIndex].done = true
 
-    return response.json(usuarios[userIndex])
+    return response.json(allToDos)
 })
 
 
