@@ -83,25 +83,19 @@ app.put ("/todo/:todoid", (request,response) => {
 
 
 // Excluir um TO-DO
-// não está funcionando
+// Deleta do allToDos, mas não deleta do usuário. Preciso ver com Bruno.
 
-app.delete ("/todo", (request, response) => {
-    const {userid, todoid} = request.body
-
-    userIndex = usuarios.findIndex( element => element.userid == userid)
-    if (userIndex < 0) {
-        return response.status(400).json({error: "Usuário não encontrado"})
-    }
-        
-    todoIndex = usuarios[userIndex].todos.findIndex( element => element.todoid == todoid)
+app.delete ("/todo/:todoid", (request, response) => {
+    const {todoid} = request.params
+ 
+    todoIndex = allToDos.findIndex( element => element.todoid == todoid)
     if (todoIndex < 0) {
         return response.status(400).json({error: "ToDo não encontrado"})
     }
   
-    let usuario = usuarios[userIndex]
-    usuario.todos.slice(todoIndex)
+    allToDos.splice(todoIndex, 1)
 
-    return response.json(usuario)
+    return response.json(allToDos)
 })
 
 
