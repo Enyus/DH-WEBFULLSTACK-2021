@@ -21,6 +21,11 @@ app.post ("/users", (request, response) => {
     return response.json(usuario)
 })
 
+// Listar os Usuários
+app.get("/users", (request, response) => {
+    return response.json(usuarios)
+})
+
 
 // Criar um novo TO-DO
 
@@ -47,7 +52,8 @@ app.get("/todo", (request, response) => {
 
 
 // Alterar o title e deadline de um todo existente
-// Aparentemente está dando certo agora, mas não entendo como alterar um item na lista dos TO-DOs altera a lista do usuário também
+// Aparentemente está dando certo agora, mas não entendo como alterar um item na lista dos TO-DOs altera a lista do usuário 
+//também
 
 app.put("/todo/:todoid", (request, response) => {
     const { todoid } = request.params
@@ -66,7 +72,7 @@ app.put("/todo/:todoid", (request, response) => {
 
 
 // Marcar um TO-DO como feito
-// está colocando apenas os valores alterados
+// Imagino que está dando conflito com o outro PUT
 
 app.put ("/todo/:todoid", (request,response) => {
     const { todoid } = request.params
