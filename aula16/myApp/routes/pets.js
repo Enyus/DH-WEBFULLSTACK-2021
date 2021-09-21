@@ -10,4 +10,7 @@ router.get ('/', petsController.index)
 //     return res.json("Pets aqui")
 // });
 
+// Criando 
+router.get ('/:fav', petsController.fav)
+
 module.exports = router;
