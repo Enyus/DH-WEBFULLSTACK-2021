@@ -89,7 +89,7 @@ app.put ("/todo/:todoid", (request,response) => {
 
 
 // Excluir um TO-DO
-// Deleta do allToDos, mas não deleta do usuário. Preciso ver com Bruno.
+// Deleta do allToDos, mas não deleta do usuário. Preciso ver com Bruno. Com o for, deleta das duas listas, o que está correto. MAS, pq funciona no outro direto e aqui precisa do FOR?
 
 app.delete ("/todo/:todoid", (request, response) => {
     const {todoid} = request.params
@@ -100,6 +100,15 @@ app.delete ("/todo/:todoid", (request, response) => {
     }
   
     allToDos.splice(todoIndex, 1)
+
+    for (element of usuarios) {
+        for (element2 of element.todos) {
+            if (element2.todoid == todoid) {
+                let i = element.todos.findIndex( element => element.todoid === todoid)
+                element.todos.splice(i, 1)
+            }
+        }
+    }
 
     return response.json(allToDos)
 })
