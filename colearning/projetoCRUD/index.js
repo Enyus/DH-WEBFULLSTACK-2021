@@ -74,7 +74,7 @@ app.put("/todo/:todoid", (request, response) => {
 // Marcar um TO-DO como feito
 // Imagino que está dando conflito com o outro PUT
 
-app.put ("/todo/:todoid", (request,response) => {
+app.patch ("/todo/:todoid", (request,response) => {
     const { todoid } = request.params
 
     todoIndex = allToDos.findIndex( element => element.todoid == todoid)
