@@ -73,6 +73,7 @@ app.put("/todo/:todoid", (request, response) => {
 
 // Marcar um TO-DO como feito
 // Imagino que está dando conflito com o outro PUT
+// Usando o PATCH funciona como deveria funcionar (22/09)
 
 app.patch ("/todo/:todoid", (request,response) => {
     const { todoid } = request.params
