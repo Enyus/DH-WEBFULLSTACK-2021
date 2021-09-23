@@ -1,6 +1,7 @@
+let servicos = require('../data/servicos.js')
+
 module.exports = {
     index(req, res, next) {
-        let listaServiços = ["Banho e Tosa", "Castração", "PetHotel"]
-      res.send("Os serviços disponíveis são: " + listaServiços);
+      res.render(servicos, {title: "Serviços"});
     },
   } 
