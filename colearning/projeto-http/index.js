@@ -57,6 +57,24 @@ app.put("/users/:id", (request, response) => {
 
     return response.json(usuario)
 })
+// Se não usar o parâmetro :id, altera toda a lista de usuários.
+
+
+// Deletando um usuário:
+app.delete("/users/:id", (request, response) => {
+    const { id } = request.params
+    
+    const userIndex = usuarios.findIndex( usuario => usuario.id === id)
+
+    if(userIndex < 0) {
+        return response.status(400).json({error: "Usuário não encontrado"})
+    }
+
+    usuarios.splice(userIndex, 1)
+
+    return response.status(204).send()
+})
+
 
 app.listen(3333)
 
