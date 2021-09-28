@@ -27,8 +27,8 @@ router.get('/login', function(req, res, next) {
 });
 
 /* GET Página Serviços: */
-router.get('/servicos', function(req, res, next) {
-  res.render('servicos', { title: 'Serviços' });
-});
+// router.get('/servicos', function(req, res, next) {
+//   res.render('servicos', { title: 'Serviços' });
+// });
 
 module.exports = router;
