@@ -192,7 +192,7 @@ section.servicos-lista article {
     border-bottom: 1px solid #555;
 }
 
-section.servicos-lista article .thumb {
+section.servicos-lista article .thumb img {
     max-width: 100%;
     width: 250px;
     height: 250px;

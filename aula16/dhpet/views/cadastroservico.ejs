@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  
+
+<body>
+
+    <!-- Incluindo o Header: -->
+    <%- include('./partials/header') %>
+
+    <main>
+        <form method="POST" action="/servicos/cadastrar" enctype="multipart/form-data">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="preco">Valor:</label>
+            <input type="text" id="preco" name="preco" required>
+
+            <label for="desc">Descrição do Serviço:</label>
+            <textarea name="desc" id="desc" required></textarea>
+
+            <!-- Para usar o Multer, lembrar de usar enctype="multipart/form-data" -->
+            <label for="file">Foto do Serviço:</label>
+            <input type="file" id="file" name="servicoimg" required>
+
+            <button type="submit" class="btn btn-primary">enviar</button>
+        </form>
+
+        <% if ( typeof(adicionado) !== "undefined") { %>
+            <h1>Serviço Cadastrado com Sucesso</h1>
+        <% } %>
+        
+    </main>
+
+
+<!-- Incluindo o Footer: -->
+<%- include('./partials/footer') %>
+
+</body>
+
+</html>

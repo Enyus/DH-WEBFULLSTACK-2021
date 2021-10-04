@@ -17,9 +17,9 @@ router.get('/cadastro', function(req, res, next) {
 });
 
 /* GET Página Contato: */
-router.get('/contato', function(req, res, next) {
-  res.render('contato', { title: 'Contato' });
-});
+// router.get('/contato', function(req, res, next) {
+//   res.render('contato', { title: 'Contato' });
+// });
 
 /* GET Página Login: */
 router.get('/login', function(req, res, next) {

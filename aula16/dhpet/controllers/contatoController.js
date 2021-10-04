@@ -28,9 +28,8 @@ module.exports = {
         let caminhoArquivo = path.join('data', 'contato.js')
 
         // Sobrescrever o conteúdo do arquivo data/contato.js:
-        fs.writeFileSync(caminhoArquivo, 'let contatos = ')
+        fs.writeFileSync(caminhoArquivo, 'module.exports = ')
         fs.appendFileSync(caminhoArquivo, dataString)
-        fs.appendFileSync(caminhoArquivo, ' module.exports = contatos')
 
         res.render('contato', {title: "Sucesso", adicionado:true})
     }

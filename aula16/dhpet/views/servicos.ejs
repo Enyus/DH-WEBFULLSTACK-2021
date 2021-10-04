@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
-    <link rel='stylesheet' href='stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   
 
@@ -21,7 +21,9 @@
 
                 <% servicos.forEach(elemento => { %>
                     <article>
-                        <div class="thumb"></div>
+                        <div class="thumb">
+                            <img src=<%= elemento.caminhoImagem %>>
+                        </div>
                         <div class="info">
                             <h2><%= elemento.nome %></h2>
                             <p><%= elemento.preco %></p>
@@ -30,6 +32,8 @@
                         </div>
                     </article>
                 <% }); %>
+
+                <a href="/servicos/cadastro" class="btn">Cadastrar novo Serviço</a>
 
             </div>
         </section>
