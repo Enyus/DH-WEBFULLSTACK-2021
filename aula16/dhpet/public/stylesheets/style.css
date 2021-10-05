@@ -265,3 +265,15 @@ section.contato a:any-link,
 section.contato p {
     color: #575757;
 }
+
+form.formservico {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+    align-items: center;
+}
+
+form.formservico input, form.formservico label, form.formservico textarea {
+    width: 50%;
+}
