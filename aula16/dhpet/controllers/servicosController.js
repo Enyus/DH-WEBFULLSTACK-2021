@@ -26,7 +26,7 @@ module.exports = {
         preco: preco,
         desc: desc,
         // caminhoImagem: `/uploads/servicoimg-${id}.png`
-        caminhoImagem: `/uploads/${filename}`
+        caminhoImagem: filename
       };
       servicos.push(objetoServico);
 
