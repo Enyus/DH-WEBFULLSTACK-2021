@@ -1,0 +1,23 @@
+1 - Construção da tela de login de usuários
+    1.1 - Crjar um arquivo para página de login (views/login.ejs)
+    1.2 - Criar rota/endpoint para listar a página de login 
+    (Obd? lembrar de utilizar método GET para rota/endpoint de login e 
+    de atribuir a propriedade title no res.render passando um título para página)
+2 - Construção do arquivo data/usuarios.js 
+conténdo JSON com informações de usuários
+    2.1 - Criar e exportar JSON com propriedades: ID, NOME, E-MAIL, SENHA
+3 - Construção da autenticação do usuário no backend (UsuarioController)
+    3.1 - Ao obter informações do usuário aplicar as seguintes condições:
+        a. obter o usuário através do e-mail
+        b. verificar se obteve usuário retornado na busca através do e-mail
+        caso não encontre e-mail, quer dizer que o usuário não existe em
+        nossa base de dados
+        c. caso usuário não exista retornar mensagem de erro genérica
+        Usuário ou senha incorretos
+        d. verificar se a senha informada pelo usuário está correta
+        caso não esteja, quer dizer que o usuário errou a senha ao informá-la
+        e. caso usuário informe senha incorreta, retornar mensagem de erro genérica
+        Usuário ou senha incorretos
+        f. redirecionar o usuário logado para uma página da nossa aplicação, construindo
+        uma sessão para mantermos as informações deste usuário logado, a medida que ele
+        trafegar pelas páginas

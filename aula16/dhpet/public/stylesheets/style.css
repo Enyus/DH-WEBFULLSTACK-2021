@@ -277,3 +277,18 @@ form.formservico {
 form.formservico input, form.formservico label, form.formservico textarea {
     width: 50%;
 }
+
+section.section-padrao h2 {
+    color: #FFBE51;
+    font-size: 40px;
+}
+
+section.section-padrao div.container {
+    flex-direction: column;
+}
+
+section.section-padrao div.container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
