@@ -1,0 +1,32 @@
+git config --list
+    Comando que mostra as configurações do git, inclusive usuário
+
+git config --global user.name "Seu Nome Completo Aqui Entre as Aspas"
+    Altera as credenciais de usuário do git, globalmente
+
+git config --global user.email seuemail@dominio.Comando
+    Altera as credenciais de e-mail do usuário, globalmente
+
+git init
+    Cria um repositório git na pasta atual.
+
+ls -a
+    mostra as pastas ocultas
+
+ls -al .git
+    mostra os arquivos ocultos da pasta .git
+
+git status
+    identifica os arquivos disponíveis para commit
+
+git add <file>
+    adiciona o aruqivo <file> para ser commitado, usar git add . adicionata todos os arquivos da pasta
+
+git commit -m "mensagem"
+    realiza o commit dos arquivos rastreados (tracked com git add) com uma mensagem
+
+git log
+    Lista todos os commits feitos até então.
+    --oneline reduz a descrição de commits para uma linha cada
+    -n x mostra os últimos x commits
+    --grep="palavra" lista commits cuja primeira palavra da mensagem é "palavra"
