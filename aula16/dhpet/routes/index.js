@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'DH Petshop' });
+  res.render('index', { title: 'DH Petshop', usuario: req.session.usuario });
 });
 
 /* GET Página Sobre. */

@@ -1,1 +1,1 @@
-module.exports = [{"id":1,"nome":"Abirosvaldo da Silva","email":"abira@osvaldo.com.br","senha":"teste"}]
+module.exports = [{"id":1,"nome":"Abirosvaldo da Silva","email":"abira@osvaldo.com.br","senha":"teste"},{"id":2,"nome":"cassio","email":"cassio@email.com","senha":"$2b$10$YZ4TbMevt5VyY3rAdOjPe.c1Z8z2Yby52eEGDwdBdDmAF3rezgDmW"}]

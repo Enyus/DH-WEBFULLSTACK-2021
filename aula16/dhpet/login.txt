@@ -3,9 +3,11 @@
     1.2 - Criar rota/endpoint para listar a página de login 
     (Obd? lembrar de utilizar método GET para rota/endpoint de login e 
     de atribuir a propriedade title no res.render passando um título para página)
+
 2 - Construção do arquivo data/usuarios.js 
 conténdo JSON com informações de usuários
     2.1 - Criar e exportar JSON com propriedades: ID, NOME, E-MAIL, SENHA
+
 3 - Construção da autenticação do usuário no backend (UsuarioController)
     3.1 - Ao obter informações do usuário aplicar as seguintes condições:
         a. obter o usuário através do e-mail
@@ -21,3 +23,16 @@ conténdo JSON com informações de usuários
         f. redirecionar o usuário logado para uma página da nossa aplicação, construindo
         uma sessão para mantermos as informações deste usuário logado, a medida que ele
         trafegar pelas páginas
+
+Parte II
+1 - Tornar o menu dinâmico, exibindo opções distintas para usuário logado e usuário
+não logado
+2 - Remover a senha do usuário antes de iniciar a sessão de usuário logado.
+3 - Efetuar Logout (sair), encerrando a sessão do usuário logado e depois redirecionando
+ele para uma página da aplicação.
+    a. adicionar uma rota no botão sair
+    b. temos a rota que foi adicionada? Não, então devemos criar a rota
+    c. a rota deverá ser executada em um método de determinado Controller,
+    portanto, também deveremos criar tal método
+    d. preparar o método que foi criado dentro do Controller, para que seja
+    destruída a sessão

@@ -9,6 +9,10 @@ router.get('/login/', usersController.login);
 
 router.get('/cadastro/', usersController.cadastro);
 
-router.get('/logar/', usersController.autenticar);
+router.post('/logar/', usersController.autenticar);
+
+router.get('/logout/', usersController.deslogar);
+
+router.post('/cadastrar/', usersController.cadastrar);
 
 module.exports = router;
