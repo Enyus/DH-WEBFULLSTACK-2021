@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 //usando Multer como Middleware:
 var upload = require('./middlewares/uploadMiddleware')
+var session = require('express-session')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -26,6 +27,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 //usando Multer como Middleware:
 app.use(upload.single('servicoimg'))
+app.use(session( {secret: "será que agora vai?", resave: true, saveUninitialized: true}))
 
 app.use('/', indexRouter);
 app.use('/users/', usersRouter);
