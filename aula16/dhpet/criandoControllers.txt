@@ -1,4 +1,0 @@
-1º passo - criar prefixo de rota no arquivo app.js
-2º passo - criar arquivo de rotas em routes/
-3º passo - criar um controller para o serviço de rotas em controllers/
-4º passo - criar os métodos dentro do Controller

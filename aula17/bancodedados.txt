@@ -1,0 +1,39 @@
+Etapa 1 - Modelagem Básica
+    Cliente
+    Nome
+    CPF
+    Email
+    Telefone
+    Endereço
+    Sexo
+
+Etapa 2 - Modelagem Lógica
+    Cliente
+    Nome - Caracter (30)
+    CPF - Caracter (11)
+    Email - Caracter (30)
+    Telefone - Caracter (11)
+    Endereço - Caracter (100)
+    Sexo - Caracter (1)
+
+Etapa 3 - Modelagem Conceitual
+
+    CREATE TABLE CLIENTE(
+        NOME VARCHAR(30),
+        CPF VARCHAR(11),
+        EMAIL VARCHAR(30),
+        TELEFONE VARCHAR(11),
+        ENDEREÇO VARCHAR(100),
+        SEXO CHAR(1)
+    );
+
+    SHOW TABLES;
+
+/*sintaxe básica de inserção - insert tabela*/
+
+INSERT INTO CLIENTE VALUES('Bruno', '18614524500', 'boliveira@digitalhouse.com',
+    '189511415', 'Rua Exemplo, 101', 'M');
+
+INSERT INTO CLIENTE(NOME, CPF, EMAIL, TELEFONE, ENDERECO, SEXO)
+VALUES ('Bruno Oliveira', '18614524500', 'boliveira@digitalhouse.com',
+    '189511415', 'Rua Exemplo, 101', 'M');

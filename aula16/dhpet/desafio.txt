@@ -1,8 +1,0 @@
-O intuito é que vocês pratiquem a abstração daquele método e tornem ele um método exportado para
- que outros arquivos possam utilizar o serviço de cadastro de registros no json.
- 
-E depois tentar reutilizar aquele método para salvar serviços no json
-
-O diferencial seria conseguir cadastrar não só o serviço, mas, mover a imagem para dentro do 
-projeto em uma pasta público/uploads/ e armazenar apenas o caminho da pasta público até essa imagem,
- como uma propriedade "caminho_da_imagem", por exemplo, no seu json.
