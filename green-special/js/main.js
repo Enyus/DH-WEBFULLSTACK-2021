@@ -1,0 +1,1 @@
+// getElementsByTagName('tag') - seleciona elementos pela tag, retornando uma lista HTML collection
