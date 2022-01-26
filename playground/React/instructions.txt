@@ -1,0 +1,33 @@
+Meus primeiros passos com React
+Introdução
+Chegou a hora de entrar no maravilhoso mundo do React. E temos certeza de que você vai gostar.
+
+Para esta missão, se você decidir aceitá-la, você vai migrar uma simples estrutura HTML + CSS para uma aplicação React.
+
+A decisão de quais e quantos componentes gerar é inteiramente sua, por isso sugerimos que antes de iniciar, r?evise em detalhe o material que lhe fornecemos?
+ e com base nisso, você tira suas próprias conclusões.
+
+Requisitos
+HTML + CSS:essas "skills" já fazem parte do seu kit de ferramentas, mas sugerimos que antes de iniciar, você se familiarize com toda a estrutura do documento fornecido,
+ para que fique claro para onde ir.
+React Basics: para poder cumprir esta missão, é necessário que você tenha um claro entendimento dos conceitos de JSX. Caso contrário, recomendamos que você reserve
+ alguns minutos para rever estes conceitos.
+Objetivo
+Seu objetivo principal será construir um aplicativo React, considerando que você pode executar os seguintes comandos:
+
+npx create-react-app my-app
+npm init react-app my-app
+Uma vez que você tenha o aplicativo instalado. Você deve levar em conta que os componentes gerados devem estar dentro da pasta /src e de preferência dentro de uma pasta
+ chamada /components.
+
+Atenção!?Neste exercício NÃO iremos trabalhar com o ambiente Node, nem o Express, uma vez que o foco principal do exercício é encarar 100% do lado do React.
+
+Sugestões extras
+No próximo tema da aula, falaremos sobre componentes e outros assuntos que vão complementar esse exercício. Após a conclusão desse exercício, olhe para sua tela e reflita:
+
+Quais partes da interface podem ser separadas?
+Em quantas partes diferentes eu posso separar a interface?
+Se uma única parte se parece muito com outra, existe alguma forma de fazer uma única "tela" e passar as configurações para ela, para que possa ser diferente visualmente?
+ALERTA DE SPOILER:Essas partes se chamam COMPONENTES e as configurações têm o nome de PROPS.
+
+Com isso em mente, temos certeza que você pode lidar com esse exercício. Boa sorte!
