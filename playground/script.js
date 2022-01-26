@@ -8,9 +8,10 @@ window.addEventListener('load', () => {
     formulario.addEventListener ("submit", function (e) {
         e.preventDefault();
         if (emailInput.value != "" && senhaInput.value != "" ) {
+            console.log("deu certo")
             msgSucesso.style.display = "block";
         } else {
-            
+            // e.preventDefault();
         }
     });
 
