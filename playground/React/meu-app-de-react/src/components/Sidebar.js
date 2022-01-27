@@ -2,47 +2,47 @@ import '../App.css';
 
 function Sidebar () {
     return (
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-			<a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
-				<div class="sidebar-brand-icon">
-					<i class="fas fa-chart-line"></i>
+			<a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+				<div className="sidebar-brand-icon">
+					<i className="fas fa-chart-line"></i>
 				</div>
-				<div class="sidebar-brand-text mx-3">Admin</div>
+				<div className="sidebar-brand-text mx-3">Admin</div>
 			</a>
 
-			<hr class="sidebar-divider my-0"/>
+			<hr className="sidebar-divider my-0"/>
 
-			<li class="nav-item active">
-				<a class="nav-link" href="/">
-					<i class="fas fa-fw fa-tachometer-alt"></i>
+			<li className="nav-item active">
+				<a className="nav-link" href="/">
+					<i className="fas fa-fw fa-tachometer-alt"></i>
 					<span>Dashboard</span></a>
 			</li>
 
-			<hr class="sidebar-divider"/>
+			<hr className="sidebar-divider"/>
 
-			<div class="sidebar-heading">Actions</div>
+			<div className="sidebar-heading">Actions</div>
 
-			<li class="nav-item">
-				<a class="nav-link collapsed" href="/">
-					<i class="fas fa-fw fa-folder"></i>
+			<li className="nav-item">
+				<a className="nav-link collapsed" href="/">
+					<i className="fas fa-fw fa-folder"></i>
 					<span>Pages</span>
 				</a>
 			</li>
 
-			<li class="nav-item">
-				<a class="nav-link" href="/">
-					<i class="fas fa-fw fa-chart-area"></i>
+			<li className="nav-item">
+				<a className="nav-link" href="/">
+					<i className="fas fa-fw fa-chart-area"></i>
 					<span>Charts</span></a>
 			</li>
 
-			<li class="nav-item">
-				<a class="nav-link" href="/">
-					<i class="fas fa-fw fa-table"></i>
+			<li className="nav-item">
+				<a className="nav-link" href="/">
+					<i className="fas fa-fw fa-table"></i>
 					<span>Tables</span></a>
 			</li>
 
-			<hr class="sidebar-divider d-none d-md-block"/>
+			<hr className="sidebar-divider d-none d-md-block"/>
 		</ul>
     )
 };
