@@ -12,7 +12,7 @@ function Topbar() {
 
 						<li className="nav-item dropdown no-arrow mx-1">
 							<a className="nav-link dropdown-toggle" href="/" id="alertsDropdown">
-								<i className="fas fa-bell fa-fw"></i>
+								<img className="fas fa-bell fa-fw" src='bell.png' alt='bell'/>
 
 								<span className="badge badge-danger badge-counter">3+</span>
 							</a>
@@ -20,7 +20,7 @@ function Topbar() {
 
 						<li className="nav-item dropdown no-arrow mx-1">
 							<a className="nav-link dropdown-toggle" href="/" id="messagesDropdown">
-								<i className="fas fa-envelope fa-fw"></i>
+								<img className="fas fa-envelope fa-fw" src='envelope.png' alt='envelope'/>
 
 								<span className="badge badge-danger badge-counter">7</span>
 							</a>
