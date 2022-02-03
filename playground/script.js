@@ -11,7 +11,8 @@ window.addEventListener('load', () => {
             console.log("deu certo")
             msgSucesso.style.display = "block";
         } else {
-            // e.preventDefault();
+            e.preventDefault();
+            console.log("Inputs vazios")
         }
     });
 
