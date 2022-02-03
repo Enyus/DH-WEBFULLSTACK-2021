@@ -6,7 +6,7 @@ function Sidebar () {
 
 			<a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
 				<div className="sidebar-brand-icon">
-					<i className="fas fa-chart-line"></i>
+					<img className="fas fa-chart-line" src='teste.png' alt='teste' />
 				</div>
 				<div className="sidebar-brand-text mx-3">Admin</div>
 			</a>
@@ -15,7 +15,7 @@ function Sidebar () {
 
 			<li className="nav-item active">
 				<a className="nav-link" href="/">
-					<i className="fas fa-fw fa-tachometer-alt"></i>
+					<img className="fas fa-fw fa-tachometer-alt" src='tachometer.png' style={{marginRight: "4px"}} alt='dashboard'/>
 					<span>Dashboard</span></a>
 			</li>
 
@@ -25,20 +25,20 @@ function Sidebar () {
 
 			<li className="nav-item">
 				<a className="nav-link collapsed" href="/">
-					<i className="fas fa-fw fa-folder"></i>
+					<img className="fas fa-fw fa-folder" src='pasta.png' alt='pasta' style={{marginRight: "4px"}}/>
 					<span>Pages</span>
 				</a>
 			</li>
 
 			<li className="nav-item">
 				<a className="nav-link" href="/">
-					<i className="fas fa-fw fa-chart-area"></i>
+					<img className="fas fa-fw fa-chart-area" src='chart.png' alt='area' style={{marginRight: "4px"}}/>
 					<span>Charts</span></a>
 			</li>
 
 			<li className="nav-item">
 				<a className="nav-link" href="/">
-					<i className="fas fa-fw fa-table"></i>
+					<img className="fas fa-fw fa-table" src='table.png' alt='table' style={{marginRight: "4px"}}/>
 					<span>Tables</span></a>
 			</li>
 

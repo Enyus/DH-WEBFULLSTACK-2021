@@ -28,7 +28,7 @@ function Wrapper() {
 											<div className="h5 mb-0 font-weight-bold text-gray-800">135</div>
 										</div>
 										<div className="col-auto">
-											<i className="fas fa-clipboard-list fa-2x text-gray-300"></i>
+											<img className="fas fa-clipboard-list fa-2x text-gray-300" src='clipboard.png' alt='clipboard'/>
 										</div>
 									</div>
 								</div>
@@ -45,7 +45,7 @@ function Wrapper() {
 											<div className="h5 mb-0 font-weight-bold text-gray-800">$546.456</div>
 										</div>
 										<div className="col-auto">
-											<i className="fas fa-dollar-sign fa-2x text-gray-300"></i>
+											<img className="fas fa-dollar-sign fa-2x text-gray-300" src='cifrao.png' alt='cifrão'/>
 										</div>
 									</div>
 								</div>
@@ -63,7 +63,7 @@ function Wrapper() {
 											<div className="h5 mb-0 font-weight-bold text-gray-800">38</div>
 										</div>
 										<div className="col-auto">
-											<i className="fas fa-user-check fa-2x text-gray-300"></i>
+											<img className="fas fa-user-check fa-2x text-gray-300" src='usercheck.png' alt='User Check'/>
 										</div>
 									</div>
 								</div>
@@ -79,7 +79,7 @@ function Wrapper() {
 								</div>
 								<div className="card-body">
 									<div className="text-center">
-										<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" width="50%" src="product_dummy.svg" alt="dummy"/>
+										<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" width="400px" src="product_dummy.svg" alt="dummy"/>
 									</div>
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur
 										explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam,
